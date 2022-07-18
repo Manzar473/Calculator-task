@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="inputDiv">
+                <input id="input" type="text" placeholder="0" >
+            </div>
+            <div class="numbers">
+                <div class="row6">
+                    <h3 class="title">Calculator</h3>
+                <button id="clearBtn"  class="clearBtn orangeBtn">C</button>
+            </div>
+            <div class="numbers">
+                <div class="row1">
+                <button id="seven" onclick="getValue(7)" class="buttons">7</button>
+                <button id="eight" onclick="getValue(8)" class="buttons">8</button>
+                <button id="nine" onclick="getValue(9)" class="buttons">9</button>
+                <button id="mul" onclick="mul()" class="buttons orangeBtn">x</button>
+            </div>
+            <div class="numbers">
+                <div class="row2">
+                <button id="four" onclick="getValue(4)" class="buttons">4</button>
+                <button id="five" onclick="getValue(5)" class="buttons">5</button>
+                <button id="six" onclick="getValue(6)" class="buttons">6</button>
+                <button id="div" onclick="div()" class="buttons orangeBtn">/</button>
+            </div>
+            <div class="numbers">
+                <div class="row3">
+                <button id="one" onclick="getValue(1)"  class="buttons">1</button>
+                <button id="two" onclick="getValue(2)" class="buttons">2</button>
+                <button id="three" onclick="getValue(3)" class="buttons">3</button>
+                <button id="min" onclick="minus()" class="buttons orangeBtn">-</button>
+            </div>
+            <div class="numbers">
+                <div class="row4">
+                <button id="zero" onclick="getValue(0)" class="buttons">0</button>
+                <button id="dot" onclick="getValue('.')" class="buttons">.</button>
+                <button id="dblzero" onclick="getValue('00')" class="buttons">00</button>
+                <button id="sum" onclick="plus()" class="buttons orangeBtn">+</button>
+            </div>
+            <div class="numbers">
+                <div class="row5">
+                <button id="EqualButton" onclick="Result()" class="EqualButton orangeBtn">=</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
